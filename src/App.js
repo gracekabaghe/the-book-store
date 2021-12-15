@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 
 import Home from './components/Home';
-import Categories from './redux/Categories/Categories';
+import Categories from './components/Categories/Categories';
 import Navbar from './components/Navbar';
 import AddNewBook from './components/AddNewBook';
 
@@ -41,17 +41,3 @@ class App extends Component {
 }
 
 export default App;
-
-// import './App.css';
-// import AddNewBook from './components/AddNewBook';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <h1>The Bookstore</h1>
-//       <AddNewBook />
-//     </div>
-//   );
-// }
-
-// export default App;
