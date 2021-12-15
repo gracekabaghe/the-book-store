@@ -1,43 +1,31 @@
-import React, { Component } from 'react';
-import './index.css';
+import { React } from 'react';
+import './App.css';
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
+  Link,
 } from 'react-router-dom';
+import BooksPage from './components/BookPage';
+import CategoriesPage from './components/Categories/Categories';
 
-import Home from './components/Home';
-import Categories from './components/Categories/Categories';
-import Navbar from './components/Navbar';
-import AddNewBook from './components/AddNewBook';
-
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/AddNewBook">
-            <AddNewBook />
-          </Route>
-          <Route path="/Categories">
-            <Categories />
-          </Route>
-          <Route path="*">
-            <Home to="/" />
-          </Route>
-        </Switch>
-      </Router>
-    );
-  }
-}
+const App = () => (
+  <Router>
+    <header>
+      <nav>
+        <h1>The Bookstore</h1>
+        <div className="nav-links">
+          <Link to="/">Books</Link>
+          <div />
+          <Link to="/categories">Categories</Link>
+        </div>
+      </nav>
+    </header>
+    <Routes>
+      <Route path="/" element={<BooksPage />} />
+      <Route path="/categories" element={<CategoriesPage />} />
+    </Routes>
+  </Router>
+);
 
 export default App;
