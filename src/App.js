@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 
 import Home from './components/Home';
-import Categories from './redux/Categories';
+import Categories from './redux/Categories/Categories';
 import Navbar from './components/Navbar';
 import AddNewBook from './components/AddNewBook';
 
