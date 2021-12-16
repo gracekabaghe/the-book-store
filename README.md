@@ -18,7 +18,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](#)
+[Live Demo Link](https://stupefied-mahavira-79dcd5.netlify.app/)
 
 To get a local copy up and running follow these simple example steps.
 
