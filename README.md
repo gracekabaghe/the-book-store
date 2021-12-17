@@ -6,7 +6,7 @@ The Bookstore
 - Add a book.
 - Remove a selected book.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./App.png)
 
 Additional description about the project and its features.
 
