@@ -1,3 +1,7 @@
+:root {
+  --main-acent-color: #0290ff;
+}
+
 body {
   font-family:
     -apple-system,
@@ -63,7 +67,8 @@ code {
   border-radius: 4px;
   padding: 5px;
   width: 200px;
-  font-size: 16px;
+  font-size: 0.813rem;
+  font-weight: bold;
 }
 
 .removebtn {
@@ -73,10 +78,6 @@ code {
 
 input {
   margin-right: 10px;
-}
-
-:root {
-  --main-acent-color: #0290ff;
 }
 
 .d_flex {
@@ -300,6 +301,8 @@ input {
   background-color: #fff;
   padding: 12px;
   width: 55%;
+  color: #c4c4c4;
+  letter-spacing: -0.15px;
 }
 
 :is(input, select):focus {

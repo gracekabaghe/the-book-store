@@ -56,7 +56,7 @@ const AddNewBook = () => {
         <div className="add-book d_flex">
           <input
             type="text"
-            placeholder="Title"
+            placeholder="Book title"
             name="title"
             onChange={onChange}
             required
@@ -68,7 +68,7 @@ const AddNewBook = () => {
             <option value="Biography">Biography</option>
             <option value="Religion">Religion</option>
           </select>
-          <button className="Add-Book-btn" type="submit" onClick={submitBookToStore}>Add Book</button>
+          <button className="Add-Book-btn" type="submit" onClick={submitBookToStore}>ADD BOOK</button>
         </div>
         <small>{errorMsg}</small>
       </form>
