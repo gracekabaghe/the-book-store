@@ -138,6 +138,7 @@ input {
   padding-right: 5rem;
   line-height: 7px;
   border-left: 1px solid #e8e8e8;
+  color: rgb(68, 67, 67);
 }
 
 .percentageVal {
