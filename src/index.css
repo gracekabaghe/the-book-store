@@ -57,6 +57,15 @@ code {
   align-items: center;
 }
 
+.Add-Book-btn {
+  background-color: #0290ff;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+  font-size: 16px;
+}
+
 .removebtn {
   width: 100px;
   height: 20px;
@@ -65,8 +74,6 @@ code {
 input {
   margin-right: 10px;
 }
-
-/* New edits */
 
 :root {
   --main-acent-color: #0290ff;
@@ -280,7 +287,7 @@ input {
   margin: 35px 0 15px 0;
 }
 
-.add-book-section h1 {
+.add-book-container h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
   letter-spacing: -0.18px;
