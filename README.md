@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-The Bookstore
+The Bookstore keeps Track of books you're reading and books you'd like to read while recording the progress on each book.
 
 - Displays a list of books.
 - Add a book.
 - Remove a selected book.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./App.png)
 
 Additional description about the project and its features.
 

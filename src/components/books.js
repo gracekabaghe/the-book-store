@@ -1,25 +1,26 @@
-import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { deleteBook } from '../redux/books/books';
+/* eslint-disable import/extensions */
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getBooksList } from '../redux/books/books';
+import BookItem from './BookItem';
 
-const Book = (props) => {
-  const { book } = props;
+const Books = () => {
   const dispatch = useDispatch();
+  const booksList = useSelector((state) => state.booksReducer);
+
+  useEffect(() => {
+    dispatch(getBooksList());
+  }, [dispatch]);
+
   return (
-    <li key={book.item_id}>
-      <span>{` ${book.title} `}</span>
-      <span>{`by ${book.category} `}</span>
-      <button type="button" onClick={() => dispatch(deleteBook(book.item_id))}>Remove Book</button>
-    </li>
+    <ul className="books-list-section">
+      {booksList
+        ? booksList.map((book) => (
+          <BookItem key={book.id} book={book} />
+        ))
+        : 'Loading...'}
+    </ul>
   );
 };
 
-export default Book;
-
-Book.propTypes = {
-  book: PropTypes.shape({
-    item_id: PropTypes.string,
-    title: PropTypes.string,
-    category: PropTypes.string,
-  }).isRequired,
-};
+export default Books;
